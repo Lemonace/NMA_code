@@ -79,7 +79,7 @@ LIST_MODEL_CHECKPOINT_PATH = '/mnt/dolphinfs/hdd_pool/docker/user/hadoop-hmart-w
 # train data
 # /users/lemonace/Downloads/tfrecord-rl-limit5-v1
 if DATA_MODE == 1:
-    TRAIN_FILE = ['/users/lemonace/Downloads/docker_data/nma_data/part-r-00000']
+    TRAIN_FILE = ['../nma_dataset/clpm_dataset']
     VALID_FILE = TRAIN_FILE
     PREDICT_FILE = VALID_FILE
     TEST_FILE = PREDICT_FILE

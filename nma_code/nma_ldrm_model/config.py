@@ -97,8 +97,8 @@ USE_BIAS_WEIGHT = True
 
 # train data
 if DATA_MODE == 1:
-    TRAIN_FILE = ["avito_v1_simulate_for_DNA/train_data/part-r-00001"]
-    VALID_FILE = ["avito_v1_simulate_for_DNA/train_data/part-r-00041"]
+    TRAIN_FILE = ["../nma_dataset/ldrm_dataset"]
+    VALID_FILE = ["../nma_dataset/ldrm_dataset"]
 else:
     TRAIN_FILE = ["avito_v1_simulate_for_DNA/train_data/part-r-000[0-3]*"]
     VALID_FILE = ["avito_v1_simulate_for_DNA/train_data/part-r-0004*"]
