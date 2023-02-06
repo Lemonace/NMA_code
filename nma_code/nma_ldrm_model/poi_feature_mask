@@ -1,0 +1,11 @@
+poi_order_cnt_30day	1	1
+poi_person_avg	1	1
+avg_delivery_time_peak_v4	1	1
+poi_shipping_fee	1	1
+poi_score	1	1
+discrete_first_tag_id	4	1
+discrete_second_tag_id	4	1
+discrete_third_tag_id	4	1
+discrete_aor_type	4	1
+discrete_poi_brand_ka	4	1
+discrete_poi_is_mtpeisong_flag	4	1

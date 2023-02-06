@@ -1,0 +1,16 @@
+EPCHO 11
+ep10
+
+
+
+pois = tf.constant([[1, 2, 3], [2, 3, 4], [4,6,7], [1, 5, 6]])
+win_pois = tf.constant([1, 2, 3])
+score = tf.constant([0.9, 0.8, 0.7, 0.6])
+
+with tf.Session() as sess:
+    tile_win_pois = tf.tile(tf.expand_dims(win_pois, axis=1), [1, 3]) # -1, 3, 3
+    tile_pois = tf.tile(tf.expand_dims(pois, axis=1), [1, 3, 1]) # -1, 4, 3, 3
+    print(sess.run(tile_win_pois))
+    print(sess.run(tile_pois))
+    mask = tf.cast(tf.equal(tile_pois, tile_win_pois), tf.int32)
+    print(sess.run(tf.reduce_sum(mask, axis=2)))
