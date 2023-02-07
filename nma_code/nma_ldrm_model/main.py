@@ -91,10 +91,10 @@ def calculate_result(result_generator, epcho):
         UGSP_CPM += np.sum(result['UGSP_CPM'])
         UGSP_SW += np.sum(result['UGSP_SW'])
         UGSP_GMV += np.sum(result['UGSP_GMV'])
-    print("VVCA_EPCHO:{}".format(epcho))
-    print("VVCA_CTR:{}".format(VVCA_CTR/count/2))
-    print("VVCA_CPM:{}".format(VVCA_CPM/count/2))
-    print("VVCA_SW:{}".format(VVCA_SW/count/2))
+    print("NMA_EPCHO:{}".format(epcho))
+    print("NMA_CTR:{}".format(VVCA_CTR/count/2))
+    print("NMA_CPM:{}".format(VVCA_CPM/count/2))
+    print("NMA_SW:{}".format(VVCA_SW/count/2))
 
 if __name__ == '__main__':
 
